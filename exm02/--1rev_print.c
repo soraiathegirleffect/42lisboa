@@ -14,7 +14,7 @@ char	*ft_rev_print(char *str)
 {
 	int	i;
 
-	i = ft_strlen(str - 1);
+	i = ft_strlen(str) - 1;
 	while (i >= 0)
 	{
 		write(1, &str[i], 1);
