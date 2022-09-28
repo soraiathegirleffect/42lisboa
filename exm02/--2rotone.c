@@ -6,10 +6,10 @@ void	rotone(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')
+		if ((str[i] >= 'A' && str[i] < 'Z') || (str[i] >= 'a' && str[i] < 'z')
 				str[i] = str[i] + 1;
 		else if (str[i] == 'Z' || str[i] == 'z')
-				str[i] = str[i] - 52;
+				str[i] = str[i] - 25;
 		write (1, &str[i], 1);
 		i++;
 	}
